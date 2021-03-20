@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c420f50892.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>CRUD Maintenace</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="store-name">Martz Vehicles</h1>
+
+    <div class="input-and-filters">
+
+    <form class="inp-filt form-inputs">
+
+    <div class="input-container">
+        <div class="input-wrapper id-wrapper">
+          <label for="id"></label>
+          <input class="input-field id" type="text" id="id" placeholder=" ID" maxlength="20">
+        </div>
+        <div class="input-wrapper make-wrapper">
+          <label for="make"></label>
+          <input class="input-field make" type="text" id="make" placeholder=" Make" maxlength="20">
+        </div>
+        <div class="input-wrapper">
+          <label for="model"></label>
+          <input class="input-field model" type="text" id="model" placeholder=" Model" maxlength="20">
+        </div>
+        <div class="input-wrapper">
+          <label for="year"></label>
+          <input class="input-field year" type="number" id="year" placeholder=" Year" maxlength="4">
+        </div>
+        <div class="input-wrapper">
+          <label for="price"></label>
+          <input class="input-field price" type="number" id="price" placeholder=" Price" maxlength="20">
+        </div>
+        <div class="input-wrapper">
+          <label for="amount"></label>
+          <input class="input-field how-many" type="number" id="amount" placeholder=" How Many" maxlength="20">
+        </div>
+  
+      </div>
+
+        <div class="btn-container">
+          <button class="btn create">Create</button>
+          <button class="btn update">Update</button>
+        </div>
+    </form>
+
+   <div class="inp-filt filter-section">
+
+     <h3 class="filter-title">Filters</h3>
+
+    <form class="form-filters">
+
+      <div class="input-wrapper">
+        <label for="make-filter"></label>
+        <input class="input-field make-filter" type="text" id="make-filter" placeholder=" Filter by Make" maxlength="20">
+      </div>
+      <div class="input-wrapper">
+        <label for="model-filter"></label>
+        <input class="input-field model-filter" type="text" id="model-filter" placeholder=" Filter by Model" maxlength="20">
+      </div>
+      <!-- <div class="input-wrapper">
+        <label for="year-filter"></label>
+        <input class="input-field year-filter" type="number" id="year-filter" placeholder=" Filter by Year" maxlength="20">
+      </div>
+      <div class="input-wrapper">
+        <label for="price-filter"></label>
+        <input class="input-field price-filter" type="text" id="price-filter" placeholder=" Filter by Price" maxlength="20">
+      </div> -->
+      
+
+    </form>
+    <button class="btn filter">Filter</button>
+   </div>
+
+    
+  </div>
+
+
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr class="head-row">
+            <th>Id</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>In Stock</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+ 
+
+
+  <script src="/localStorage.js"></script>
+  <script src="/ui.js"></script>
+  <script src="/inputObj.js"></script>  
+  <script src="/app.js"></script>
+</body>
+</html>
