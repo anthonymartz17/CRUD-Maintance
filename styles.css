@@ -167,7 +167,15 @@ body{
 }
 
 .input-field{
-  width: 100%
+  width: 100%;
+ 
+  
+}
+
+.unable{
+  background-color: rgb(206, 199, 199);
+  pointer-events: none;
+  opacity: .3;
 }
 
 

@@ -93,7 +93,8 @@ class Ui{
 
   editRow(e){   
 
-  
+    this.create.classList.add('unable')
+
       let eId =  e.target.parentElement.parentElement.firstElementChild.textContent
 
       let eMake = e.target.parentElement.parentElement.firstElementChild.nextElementSibling.textContent

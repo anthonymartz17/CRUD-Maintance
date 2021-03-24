@@ -14,10 +14,11 @@ document.addEventListener('DOMContentLoaded', e =>{
      setTimeout(()=>{
        document.querySelector('.error').remove()
      },2500)
+     return 
 
     }
     
-     else{
+     
       let rows = document.querySelectorAll('.row');
        
       rows.forEach(one =>{
@@ -26,7 +27,10 @@ document.addEventListener('DOMContentLoaded', e =>{
           setTimeout(()=>{
             document.querySelector('.error').remove()
           },2500)
-        }else{
+          return
+        }
+        
+        else{
 
       ui.createRow()
       LocalSto.addToLocal(obj)
@@ -36,7 +40,7 @@ document.addEventListener('DOMContentLoaded', e =>{
       })
 
     
-    }
+    
     
   })
 
